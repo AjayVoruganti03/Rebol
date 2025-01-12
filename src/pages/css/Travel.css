@@ -1,0 +1,40 @@
+/* Travel.css */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section img {
+      max-width: 100%;
+    }
+  }
+  

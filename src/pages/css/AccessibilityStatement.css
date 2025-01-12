@@ -1,0 +1,41 @@
+.accessibility-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: sans-serif;
+    line-height: 1.6;
+  }
+  
+  .accessibility-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .accessibility-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .accessibility-paragraph {
+    margin-bottom: 1.5rem;
+  }
+  
+  .accessibility-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .accessibility-list-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .accessibility-container {
+      padding: 10px;
+    }
+  }
+  

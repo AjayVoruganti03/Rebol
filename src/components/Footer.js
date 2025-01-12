@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Rebol Cabs</h3>
           <p>
-            <Link to="/contact">Visit Help Center</Link>
+            <Link to="/contact" onClick={scrollToTop}>Visit Help Center</Link>
           </p>
         </div>
 

@@ -60,10 +60,10 @@ const HomePage = () => {
   // Function to check if the app is installed (implementation needed)
   const isAppInstalled = () => {
     // You will need to implement this function based on how you want to
-    // check for app installation.  
+    // check for app installation.
     // Some possible approaches:
     // 1. Check for a specific cookie or local storage value set by your app.
-    // 2. Use a browser API (like `navigator.userAgent`) to check if the app is 
+    // 2. Use a browser API (like `navigator.userAgent`) to check if the app is
     //    installed (this may not be reliable).
     // 3. Use a third-party library to detect app installation.
     // ... Your code here ...
@@ -71,20 +71,22 @@ const HomePage = () => {
   };
 
   const handleRideNowClick = () => {
-    if (isAppInstalled()) { 
+    if (isAppInstalled()) {
       // Open the app using the custom URL scheme
       window.location.href = "your-app-scheme://"; // Replace with your app's scheme
     } else {
       // Redirect to the Play Store
-      window.location.href = "https://play.google.com/store/apps/details?id=com.rebolcabuser.user";
+      window.location.href =
+        "https://play.google.com/store/apps/details?id=com.rebolcabuser.user";
     }
   };
 
   const handleBookRideClick = () => {
-    if (isAppInstalled()) { 
+    if (isAppInstalled()) {
       window.location.href = "your-app-scheme://"; // Replace with your app's scheme
     } else {
-      window.location.href = "https://play.google.com/store/apps/details?id=com.rebolcabuser.user";
+      window.location.href =
+        "https://play.google.com/store/apps/details?id=com.rebolcabuser.user";
     }
   };
 
@@ -155,7 +157,10 @@ const HomePage = () => {
             </p>
             <button
               className="service-button"
-              onClick={() => (window.location.href = "/services")}
+              onClick={() => {
+                window.location.href = "/services";
+                window.scrollTo(0, 0);
+              }}
             >
               Learn More
             </button>
@@ -174,7 +179,10 @@ const HomePage = () => {
             </p>
             <button
               className="service-button"
-              onClick={() => (window.location.href = "/services")}
+              onClick={() => {
+                window.location.href = "/services";
+                window.scrollTo(0, 0);
+              }}
             >
               Explore Rentals
             </button>
@@ -192,7 +200,10 @@ const HomePage = () => {
             </p>
             <button
               className="service-button"
-              onClick={() => (window.location.href = "/services")}
+              onClick={() => {
+                window.location.href = "/services";
+                window.scrollTo(0, 0);
+              }}
             >
               Book Delivery
             </button>
@@ -255,7 +266,10 @@ const HomePage = () => {
           </p>
           <button
             className="learn-more-button"
-            onClick={() => (window.location.href = "/about")}
+            onClick={() => {
+              window.location.href = "/about";
+              window.scrollTo(0, 0);
+            }}
           >
             Learn More
           </button>

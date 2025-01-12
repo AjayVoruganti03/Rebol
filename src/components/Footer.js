@@ -1,7 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Footer.css"; // Add corresponding CSS
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -9,7 +15,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Rebol Cabs</h3>
           <p>
-            <a href="/contact">Visit Help Center</a>
+            <Link to="/contact">Visit Help Center</Link>
           </p>
         </div>
 
@@ -18,10 +24,10 @@ const Footer = () => {
           <h4>Company</h4>
           <ul>
             <li>
-              <a href="/about">About Us</a>
+              <Link to="/about" onClick={scrollToTop}>About Us</Link>
             </li>
             <li>
-              <a href="/services">Our Offerings</a>
+              <Link to="/services" onClick={scrollToTop}>Our Offerings</Link>
             </li>
           </ul>
         </div>
@@ -31,10 +37,10 @@ const Footer = () => {
           <h4>Products</h4>
           <ul>
             <li>
-              <a href="/Products">Ride</a>
+              <Link to="/Products" onClick={scrollToTop}>Ride</Link>
             </li>
             <li>
-              <a href="/Products">Packages</a>
+              <Link to="/Products" onClick={scrollToTop}>Packages</Link>
             </li>
           </ul>
         </div>
@@ -44,61 +50,61 @@ const Footer = () => {
           <h4>Travel</h4>
           <ul>
             <li>
-              <a href="/Travel">Reserve</a>
+              <Link to="/Travel" onClick={scrollToTop}>Reserve</Link>
             </li>
             <li>
-              <a href="/Travel">Airports</a>
+              <Link to="/Travel" onClick={scrollToTop}>Airports</Link>
             </li>
             <li>
-              <a href="/Travel">Cities</a>
+              <Link to="/Travel" onClick={scrollToTop}>Cities</Link>
             </li>
           </ul>
         </div>
       </div>
 
       {/* Social Media Icons */}
-        <div className="socail-container">
-          <div className="footer-social">
-            <a
-          href="https://www.facebook.com/share/19yG7LFQV6/"
-          target="_blank"
-          rel="noopener noreferrer"
-            >
-          <img src="./images/facebook_logo.jpeg" alt="Facebook" />
-            </a>
-            <a
-          href="https://www.linkedin.com/in/rebol-cabs-7a5334344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          target="_blank"
-          rel="noopener noreferrer"
-            >
-          <img src="./images/linkedin1.jpg" alt="LinkedIn" />
-            </a>
-            <a
-          href="https://www.instagram.com/rebolcabs?igsh=MThsYzMyNWo4Nm9sdA=="
-          target="_blank"
-          rel="noopener noreferrer"
-            >
-          <img src="./images/instalogo.jpeg" alt="Instagram" />
-            </a>
-          </div>
-          <div className="footer-location">
-            <a
-          href="https://maps.app.goo.gl/tN93MdPv5x99AztZ8?g_st=iw"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: "none",color: "white" }}
-            >
-          <p>📍 Hyderabad</p>
-            </a>
-          </div>
+      <div className="socail-container">
+        <div className="footer-social">
+          <a
+            href="https://www.facebook.com/share/19yG7LFQV6/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/facebook_logo.jpeg" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rebol-cabs-7a5334344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/linkedin1.jpg" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.instagram.com/rebolcabs?igsh=MThsYzMyNWo4Nm9sdA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/instalogo.jpeg" alt="Instagram" />
+          </a>
         </div>
-        {/* Footer Bottom */}
+        <div className="footer-location">
+          <a
+            href="https://maps.app.goo.gl/tN93MdPv5x99AztZ8?g_st=iw"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <p>📍 Hyderabad</p>
+          </a>
+        </div>
+      </div>
+      {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>© 2025 Rebol Cabs</p>
         <p>
-          <a href="/PrivacyPolicy">Privacy</a> |{" "}
-          <a href="/AccessibilityStatement">Accessibility</a> |{" "}
-          <a href="/TermsAndConditions">Terms</a>
+          <Link to="/PrivacyPolicy"  onClick={scrollToTop}>Privacy</Link> |{" "}
+          <Link to="/AccessibilityStatement"  onClick={scrollToTop}>Accessibility</Link> |{" "}
+          <Link to="/TermsAndConditions"  onClick={scrollToTop}>Terms</Link>
         </p>
       </div>
     </footer>

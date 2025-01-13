@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "./css/HomePage.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   const [isCustomer, setIsCustomer] = useState(true); // State to toggle between Customers and Captains
 
   const customerFeatures = [
@@ -155,7 +160,7 @@ const HomePage = () => {
               reliable drivers will get you to your destination safely and
               efficiently.
             </p>
-            <button
+            {/* <button
               className="service-button"
               onClick={() => {
                 window.location.href = "/services";
@@ -163,7 +168,10 @@ const HomePage = () => {
               }}
             >
               Learn More
-            </button>
+            </button> */}
+            <Link to="/services" onClick={scrollToTop}>
+              <button className="service-button">Learn More</button>
+            </Link>
           </div>
           <div className="service-card">
             <img
@@ -177,7 +185,7 @@ const HomePage = () => {
               Choose from our selection of well-maintained vehicles and enjoy
               the freedom of the road.
             </p>
-            <button
+            {/* <button
               className="service-button"
               onClick={() => {
                 window.location.href = "/services";
@@ -185,7 +193,10 @@ const HomePage = () => {
               }}
             >
               Explore Rentals
-            </button>
+            </button> */}
+            <Link to="/services" onClick={scrollToTop}>
+              <button className="service-button">Explore Rentals</button>
+            </Link>
           </div>
           <div className="service-card">
             <img
@@ -198,7 +209,7 @@ const HomePage = () => {
               Need something delivered urgently and securely? Choose Rebol
               Couriers for fast and efficient delivery services within the city.
             </p>
-            <button
+            {/* <button
               className="service-button"
               onClick={() => {
                 window.location.href = "/services";
@@ -206,7 +217,10 @@ const HomePage = () => {
               }}
             >
               Book Delivery
-            </button>
+            </button> */}
+            <Link to="/services" onClick={scrollToTop}>
+              <button className="service-button">Book Delivery</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -264,7 +278,7 @@ const HomePage = () => {
             and commitment to customer satisfaction, we go the extra mile to
             make your journey memorable.
           </p>
-          <button
+          {/* <button
             className="learn-more-button"
             onClick={() => {
               window.location.href = "/about";
@@ -272,7 +286,10 @@ const HomePage = () => {
             }}
           >
             Learn More
-          </button>
+          </button> */}
+          <Link to="/about" onClick={scrollToTop}>
+            <button className="learn-more-button">Learn More</button>
+          </Link>
         </div>
       </section>
 
